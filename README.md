@@ -51,11 +51,14 @@ For changes of copies on your computer using [Git]:
 5. Check out a new branch, e.g. for a certain issue.  
    `git checkout -b issue-1`
 6. Commit the changes using a commit message in present tense describing what
-   you change and why.
+   you change and why.  
+   `git add ...`  
+   `git commit -m"..."`
 7. Update your changes to the latest version on the `master` branch.  
    `git pull --rebase upstream master`
 8. Push the changes.  
-   `git push -u origin issue-1`
+   `git push -u origin issue-1`  
+   Git will show you a message with a link where you can create a pull request.
 
 ## Running the project
 1. `pipenv run make devserver` (You need to have GNU make installed)
