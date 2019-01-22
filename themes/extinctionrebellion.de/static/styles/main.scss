@@ -1,0 +1,74 @@
+@import "fonts";
+@import "wipe";
+@import "html5boilerplate";
+
+@import "typography";
+
+@import "colors";
+
+
+
+$header-height: 94px;
+
+$logo-height: 72px;
+
+
+header {
+  background-color: $primary-color;
+  width: 100%;
+  box-shadow: 0 1px 0 hsla(0, 0%, 0%, 0.1);
+  > .container {
+    position: relative;
+    height: $header-height;
+  }
+
+  #logo {
+    margin-top: ($header-height - $logo-height) / 2;
+    margin-bottom: ($header-height - $logo-height) / 2;
+    img {
+      height: $logo-height;
+    }
+  }
+
+  #nav {
+    display: contents;
+    $nav-toggle-size: 32px;
+    #nav-toggle {
+      height: $nav-toggle-size;
+      width: $nav-toggle-size;
+      margin-top: ($header-height - $nav-toggle-size) / 2;
+      margin-bottom: ($header-height - $nav-toggle-size) / 2;
+      float: right;
+      margin-right: 10px;
+      svg.close {display: none;}
+    }
+    &.open #nav-toggle {
+      svg.hamburger {display: none;}
+      svg.close {display: initial;}
+    }
+
+    &.open #navbar {display: block;}
+    #navbar {
+      display: none;
+      position: absolute;
+      background-color: $primary-color;
+      top: $header-height;
+      padding: 15px;
+      right: 0;
+      max-width: 100%;
+    }
+  }
+}
+
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80%;
+  width: 1080px;
+}
+
+main {
+  @extend .container;
+  margin-top: 50px;
+}

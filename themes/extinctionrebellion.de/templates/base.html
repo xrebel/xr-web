@@ -1,0 +1,75 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>
+    {%- block title -%}
+      Rebellion für das Leben
+    {%- endblock -%}
+    | Extinction Rebellion</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="manifest" href="site.webmanifest">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=YAmqpe7xOg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=YAmqpe7xOg">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=YAmqpe7xOg">
+  <link rel="manifest" href="/site.webmanifest?v=YAmqpe7xOg">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg?v=YAmqpe7xOg" color="#00a836">
+  <meta name="msapplication-TileColor" content="#050505">
+  <meta name="theme-color" content="#00a836">
+
+  {% assets filters="pyscss", output="styles/style.min.css", "styles/main.scss" %}
+    <link rel="stylesheet", href="{{ SITEURL }}/{{ ASSET_URL }}">
+  {% endassets %}
+
+  {% block extrastyles %}{% endblock %}
+</head>
+
+<body>
+  <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <header>
+    <div class="container">
+      <a href="{{ SITEURL }}" id="logo">
+        <img src="https://extinctionrebellion.de/wp-content/uploads/2018/11/XR_logo_2_2.png"
+            alt="Extinction Rebellion Logo">
+      </a>
+      <div id="nav">
+        <button id="nav-toggle">
+          <svg class="hamburger" height="32" width="32" viewBox="0 0 32 32" xml:space="preserve"><path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/></svg>
+          <svg class="close" height="32px" width="32px" viewBox="0 0 512 512" xml:space="preserve"><path d="M437.5,386.6L306.9,256l130.6-130.6c14.1-14.1,14.1-36.8,0-50.9c-14.1-14.1-36.8-14.1-50.9,0L256,205.1L125.4,74.5  c-14.1-14.1-36.8-14.1-50.9,0c-14.1,14.1-14.1,36.8,0,50.9L205.1,256L74.5,386.6c-14.1,14.1-14.1,36.8,0,50.9  c14.1,14.1,36.8,14.1,50.9,0L256,306.9l130.6,130.6c14.1,14.1,36.8,14.1,50.9,0C451.5,423.4,451.5,400.6,437.5,386.6z"/></svg>
+        </button>
+        <nav id="navbar">
+          <ul>
+              <li><a href="https://extinctionrebellion.de/uber-uns/">Wer wir sind</a></li>
+              <li><a href="https://extinctionrebellion.de/manifest/">Manifest</a></li>
+              <li><a href="https://extinctionrebellion.de/forderungen/">Forderungen</a></li>
+              <li><a href="https://extinctionrebellion.de/aktiv-werden/">Mach mit!</a></li>
+              <li><a href="https://extinctionrebellion.de/veranstaltungen/">Veranstaltungen</a></li>
+              <li><a href="https://extinctionrebellion.de/category/blog/">Blog</a></li>
+              <li><a target="_blank" href="https://xrebellion.org/">International</a></li>
+              <li><a href="https://extinctionrebellion.de/ortsgruppen/">Ortsgruppen</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+
+  {# When we need feature detection: <script src="js/vendor/modernizr-3.6.0.min.js"></script> -#}
+  <script src="theme/js/vendor/jquery-3.3.1.min.js"></script>
+  {# <script src="js/plugins.js"></script> -#}
+  <script src="theme/js/main.js"></script>
+</body>
+
+</html>
