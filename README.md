@@ -24,7 +24,18 @@ yourself, create an Issue.
 6. Install [pyenv] as described on their website.
    This allows us to specify the Python version we want to use.
 7. Install the development environment.  
-   `pipenv install --dev`
+   `pipenv install --dev`  
+   If you want to specify a python version because installation of the
+   proposed one does not work, use the `--python` parameter.  
+   `pipenv --python python3 install --dev`  
+   Likewise, you can do this with all following `pipenv` commands.
+
+## Running the project
+
+1. `pipenv run make devserver` (You need to have GNU make installed)
+2. Open your browser at [localhost:8000]
+3. Start changing things :) If you notice anything weird, don't hesitate to
+   create an issue.
 
 ## Add Your Changes (Make a Pull Request)
 
@@ -60,14 +71,9 @@ For changes of copies on your computer using [Git]:
    `git push -u origin issue-1`  
    Git will show you a message with a link where you can create a pull request.
 
-## Running the project
-1. `pipenv run make devserver` (You need to have GNU make installed)
-2. Open your browser at localhost:8000
-3. Start changing things :) If you notice anything weird, don't hesitate to
-   create an issue
-
 [Git]: https://git-scm.com/
 [fork]: https://github.com/xrebel/xr-web/fork
 [pipenv]: https://pipenv.readthedocs.io/en/latest/install/#installing-pipenv
 [pyenv]: https://github.com/pyenv/pyenv#installation
+[localhost:8000]: http://localhost:8000
 
