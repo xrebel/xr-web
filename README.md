@@ -3,10 +3,10 @@
 This project will hopefully soon be used to generate
 https://extinctionrebellion.de
 
-Issues and pull requests are very welcome. If something is hart to understand or
+Issues and pull requests are very welcome. If something is hard to understand or
 should be explained in this readme, please also create an Issue.
 
-The same goes for content: If don't feel comfortable making the relevant changes
+The same goes for content: If you don't feel comfortable making the relevant changes
 yourself, create an Issue.
 
 ## Getting Started
@@ -76,4 +76,3 @@ For changes of copies on your computer using [Git]:
 [pipenv]: https://pipenv.readthedocs.io/en/latest/install/#installing-pipenv
 [pyenv]: https://github.com/pyenv/pyenv#installation
 [localhost:8000]: http://localhost:8000
-
