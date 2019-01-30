@@ -4,7 +4,6 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [dev-packages]
-invoke = "*"
 
 [packages]
 pelican = "*"
@@ -12,6 +11,7 @@ markdown = "*"
 webassets = "*"
 cssmin = "*"
 pyscss = "*"
+invoke = "*"
 
 [requires]
 python_version = "3.7"
