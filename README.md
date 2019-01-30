@@ -9,6 +9,7 @@ should be explained in this readme, please also create an Issue.
 The same goes for content: If you don't feel comfortable making the relevant changes
 yourself, create an Issue.
 
+
 ## Getting Started
 [Getting Started]: #getting-started
 
@@ -21,6 +22,8 @@ yourself, create an Issue.
    `git submodule update --init`
 5. Install [pipenv].  
    `pip3 install --user pipenv`
+   For Mac OSX Users, it is recommended to use a package manager (Homebrew seems to be most convenient): `brew install pipenv`
+   More info about Homebrew: https://brew.sh
 6. Install [pyenv] as described on their website.
    This allows us to specify the Python version we want to use.
 7. Install the development environment.  
